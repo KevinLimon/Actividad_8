@@ -8,7 +8,7 @@ class Laboratorio
     size_t cont;
 public:
     Laboratorio();
-    void agregarComputadora(const Computadora &c);
+    void agregarFinal(const Computadora &c);
     void mostrar();
 };
 
