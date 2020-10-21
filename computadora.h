@@ -33,6 +33,18 @@ public:
         out << endl;
         return out;
     }
+    friend istream& operator>>(istream &in, Computadora &c)
+    {
+        cout<<"Marca: ";
+        getline(cin, c.marca);
+        cout<<"Color: ";
+        getline(cin, c.color);
+        cout<<"Precio: ";
+        cin >> c.precio;
+        cout<<"Memoria: ";
+        cin >> c.memoria;
+        return in;
+    }
 };
 
 
