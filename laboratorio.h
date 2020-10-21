@@ -10,6 +10,12 @@ public:
     Laboratorio();
     void agregarFinal(const Computadora &c);
     void mostrar();
+
+    friend Laboratorio& operator<<(Laboratorio &L, const Computadora &c)
+    {
+        L.agregarFinal(c);
+        return L;
+    }
 };
 
 

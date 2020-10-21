@@ -28,7 +28,11 @@ int main(){
     lb.agregarFinal(c03);
     //lb.agregarFinal(c04);
     //lb.agregarFinal(c05);
+    Computadora c06;
+    cin >> c06;
+    lb<<c06;
     lb.mostrar();
+
     //cout << c01;
     //cout<<c02.getMarca()<<endl;
     //cout<<c02.getColor()<<endl;
