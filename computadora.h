@@ -1,6 +1,7 @@
 #ifndef COMPUTADORA_H
 #define COMPUTADORA_H
 #include<iostream>
+#include <iomanip>
 using namespace std;
 
 class Computadora
@@ -24,10 +25,12 @@ public:
 
     friend ostream& operator<<(ostream &out, const Computadora &c)
     {
-        out << c.marca <<endl;
-        out << c.color <<endl;
-        out << c.precio <<endl;
-        out << c.memoria <<endl;
+        out<<left;
+        out << setw(10) << c.marca;
+        out << setw(10) << c.color;
+        out << setw(10) << c.precio;
+        out << setw(10) << c.memoria;
+        out << endl;
         return out;
     }
 };

@@ -19,6 +19,12 @@ void Laboratorio::agregarFinal(const Computadora &c)
 
 void Laboratorio::mostrar()
 {
+    cout <<left;
+    cout<<setw(10)<<"Marca";
+    cout<<setw(10)<<"Color";
+    cout<<setw(10)<<"Precio";
+    cout<<setw(10)<<"Memoria";
+    cout<<endl;
     for(size_t i=0;i<cont;i++){
         Computadora &c = arreglo[i];
         cout << c;
