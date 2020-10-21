@@ -21,6 +21,15 @@ public:
     float getPrecio();
     void setMemoria(int valor);
     int getMemoria();
+
+    friend ostream& operator<<(ostream &out, const Computadora &c)
+    {
+        out << c.marca <<endl;
+        out << c.color <<endl;
+        out << c.precio <<endl;
+        out << c.memoria <<endl;
+        return out;
+    }
 };
 
 
