@@ -21,10 +21,11 @@ void Laboratorio::mostrar()
 {
     for(size_t i=0;i<cont;i++){
         Computadora &c = arreglo[i];
-        cout<<"Marca: "<<c.getMarca()<<endl;
-        cout<<"Color: "<<c.getColor()<<endl;
-        cout<<"Precio: "<<c.getPrecio()<<endl;
-        cout<<"Memoria: "<<c.getMemoria()<<endl;
-        cout<<endl;
+        cout << c;
+        //cout<<"Marca: "<<c.getMarca()<<endl;
+        //cout<<"Color: "<<c.getColor()<<endl;
+        //cout<<"Precio: "<<c.getPrecio()<<endl;
+        //cout<<"Memoria: "<<c.getMemoria()<<endl;
+        //cout<<endl;
     }
 }

@@ -29,8 +29,7 @@ int main(){
     //lb.agregarFinal(c04);
     //lb.agregarFinal(c05);
     lb.mostrar();
-
-
+    //cout << c01;
     //cout<<c02.getMarca()<<endl;
     //cout<<c02.getColor()<<endl;
     //cout<<c02.getPrecio()<<endl;
