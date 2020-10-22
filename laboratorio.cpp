@@ -41,15 +41,12 @@ void Laboratorio::respaldar()
 {
     ofstream archivo ("computadoras.txt");
     if (archivo.is_open()){
-        archivo <<left;
-        archivo<<setw(10)<<"Marca";
-        archivo<<setw(10)<<"Color";
-        archivo<<setw(10)<<"Precio";
-        archivo<<setw(10)<<"Memoria";
-        archivo<<endl;
         for(size_t i=0;i<cont;i++){
             Computadora &c = arreglo[i];
-            archivo << c;
+            archivo << c.getMarca()<<endl;
+            archivo << c.getColor()<<endl;
+            archivo << c.getPrecio()<<endl;
+            archivo << c.getMemoria()<<endl;
     }
 }
     archivo.close();
