@@ -1,4 +1,5 @@
 #include "laboratorio.h"
+#include <fstream>
 
 Laboratorio::Laboratorio()
 {
@@ -34,4 +35,16 @@ void Laboratorio::mostrar()
         //cout<<"Memoria: "<<c.getMemoria()<<endl;
         //cout<<endl;
     }
+}
+
+void Laboratorio::respaldar()
+{
+    ofstream archivo ("computadoras.txt");
+    if (archivo.is_open()){
+        for(size_t i=0;i<cont;i++){
+            Computadora &c = arreglo[i];
+            archivo << c;
+    }
+}
+    archivo.close();
 }
