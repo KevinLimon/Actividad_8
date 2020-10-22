@@ -32,6 +32,7 @@ int main(){
     cin >> c06;
     lb<<c06;
     lb.mostrar();
+    lb.respaldar();
 
     //cout << c01;
     //cout<<c02.getMarca()<<endl;
