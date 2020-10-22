@@ -74,7 +74,7 @@ void Laboratorio::recuperar()
             c.setPrecio(precio);
             getline(archivo, t);
             memoria = stoi(t);
-            c.setPrecio(memoria);
+            c.setMemoria(memoria);
             agregarFinal(c);
         }
     }
