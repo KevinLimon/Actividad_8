@@ -63,6 +63,9 @@ void Laboratorio::recuperar()
 
         while(true){
             getline(archivo, t);
+            if (archivo.eof()){
+                break;
+            }
             c.setMarca(t);
             getline(archivo, t);
             c.setColor(t);
