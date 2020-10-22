@@ -51,3 +51,29 @@ void Laboratorio::respaldar()
 }
     archivo.close();
 }
+
+void Laboratorio::recuperar()
+{
+    ifstream archivo("computadoras.txt");
+    if(archivo.is_open()){
+        string t;
+        float precio;
+        int memoria;
+        Computadora c;
+
+        while(true){
+            getline(archivo, t);
+            c.setMarca(t);
+            getline(archivo, t);
+            c.setColor(t);
+            getline(archivo, t);
+            precio = stof(t);
+            c.setPrecio(precio);
+            getline(archivo, t);
+            memoria = stoi(t);
+            c.setPrecio(memoria);
+            agregarFinal(c);
+        }
+    }
+    archivo.close();
+}
