@@ -1,0 +1,16 @@
+Lenovo
+azul
+1550
+512
+HP
+negro
+1200
+1024
+Acer
+verde
+12000
+1024
+Apple
+Verde
+8843
+124
